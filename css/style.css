@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lightgray;
+	font: 14px/22px Arial, sans-serif;
+	min-width: 800px;
+}
+hr {
+	margin: 0 20px;
+}
+.container {
+	
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+header .box {
+	
+	margin: 10px;
+	height: 100px;
+	background-color: grey;
+}
+.logo {
+	width: 100px;
+}
+.company_name{
+	display: flex;
+	flex-grow: 6;
+}
+.company_name h1{
+	margin: auto;
+}
+.box.contacts{
+	height: 70px;
+	padding: 30px 10px 0px 10px;
+	text-align: right;
+	flex-grow: 3;
+}
+.box.contacts a{
+	text-decoration: none;
+	color: black;
+}
+.container_content_left {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+.container_content_left .box {
+	padding: 10px;
+	margin: 10px;
+	width: 170px;
+	background-color: grey;
+}
+.services {
+	flex-grow: 1;
+	list-style-type: none;
+}
+.promo_img{
+
+	height: 100px;
+}
+
+.container_content{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.container_content .box {
+	padding: 10px;
+	margin: 10px;
+	background-color: grey;
+
+}
+.gallery {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px;
+	overflow:auto;
+	max-height:400px;
+	border: 3px solid grey;
+	border-radius: 5px;
+	background-color: #E0FFFF;
+}
+
+.gallery img {
+	border: 5px solid grey;
+	border-radius: 5px;
+	margin: 10px;
+	width: 160px;
+	height: 120px;
+}
+.gallery img:hover{
+	border: 5px solid black;
+	border-radius: 5px;
+}
+
+.container_content .container {
+	margin: 0;
+}
+footer .container{
+	height: 120px;
+}
+footer .box {
+	font-size: 0.8em;
+	margin: 10px;
+	padding: 10px;
+	background-color: grey;
+}
+.items {
+	flex-grow: 1;
+ 	display: flex;
+ 	flex-direction: column;
+ 	flex-wrap: wrap;
+
+}
+.prices{
+	cursor:default;
+	list-style-position: inside;
+	columns: 3;
+}
+
+.container_right {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.container_right .box{
+	height: 20px;
+}
+
+
+#floatTip{
+	position: absolute;
+	width: 75px;
+	height: 40px;
+	display: none;
+	border: 2px solid black;
+	border-radius: 5px;
+	background: rgba(111, 155, 45, 0.6);
+
+}
