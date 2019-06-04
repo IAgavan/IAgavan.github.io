@@ -1,40 +1,37 @@
 document.onmousemove = moveTip;
     function moveTip(e) {
-      floatTipStyle = document.getElementById("floatTip").style;
-      w = 75; // Ширина подсказки
-      h = 40; // Высота 
+      const floatTip = document.getElementById("floatTip");
+      const floatTipStyle = floatTip.style;
+      const width = floatTip.offsetWidth; // Ширина подсказки
+      const height = floatTip.offsetHeight; // Высота 
+      const offset = 10;
+      const toolTipLeft = e.pageX; // Координата X курсора
+      const toolTipTop = e.pageY; // Координата Y курсора
       
-      x = e.pageX; // Координата X курсора
-      y = e.pageY; // Координата Y курсора
-     
+      const availableWidth = document.documentElement.offsetWidth;
+      const availableHeidht = document.documentElement.offsetHeight;
+      
+      const minLeft = offset;
+      const maxLeft = availableWidth - offset*2 - width;
+      const minTop = offset;
+      const maxTop = availableHeidht - offset*2 - height;
 
-      // Показывать слой справа от курсора 
-      if ((x + w + 10) < document.documentElement.clientWidth) { 
-        floatTipStyle.left = x + 'px';
+      let left = Math.max(minLeft, Math.min(maxLeft, toolTipLeft));
+      let top = Math.max(minTop, Math.min(maxTop, toolTipTop));
 
-      // Показывать слой слева от курсора
-      } else { 
-        floatTipStyle.left = x - w + 'px';
-      }
-      // Показывать слой снизу от курсора 
-      if ((y + h) < document.documentElement.clientHeight) { 
-        floatTipStyle.top = y + 10 + 'px';
-        // Показывать слой сверху от курсора
-      } else {
-        floatTipStyle.top = y - 50 +'px';
-      }
-         
-    }
-
-    function toolTip(msg) {
-      floatTipStyle = document.getElementById("floatTip").style;
-      if (msg) {
-        // Выводим текст подсказки
-        document.getElementById("floatTip").innerHTML = msg;
-        // Показываем подсказку
-        floatTipStyle.display = "block";
-      } else { 
-        // Прячем подсказку
-        floatTipStyle.display = "none";
-      } 
-    }
+      return (floatTipStyle.left = `${left}px`,
+      floatTipStyle.top = `${top}px`)
+      
+    };
+function toolTip(msg) {
+  floatTipStyle = document.getElementById("floatTip").style;
+  if (msg) {
+  // Выводим текст подсказки
+  document.getElementById("floatTip").innerHTML = msg;
+  // Показываем подсказку
+  floatTipStyle.display = "block";
+  } else { 
+  // Прячем подсказку
+  floatTipStyle.display = "none";
+  };
+};
