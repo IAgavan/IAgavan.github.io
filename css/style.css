@@ -64,8 +64,38 @@ header .box {
 }
 .services {
 	flex-grow: 1;
+	
+}
+.menu li{
 	list-style-type: none;
 }
+.menu a {
+	display: block;
+	border: 1px solid grey;
+	margin-bottom: 2px;
+	text-decoration: none;
+	color: black;
+	font-size: 0.9em;
+	padding-left: 5px;
+	transition: 0.5s all;
+}
+.menu a:hover {
+	background-color: grey;
+	padding: 0 0 0 10px;
+}
+.submenu {
+
+	display: none;
+	margin-left:15px;
+}
+.menu_drop:focus-within .submenu {
+	display: block;
+}
+
+
+
+
+
 .promo_img{
 
 	height: 100px;
@@ -99,11 +129,12 @@ header .box {
 }
 
 .gallery img {
+	padding: -1px;
 	border: 5px solid #6D9C00;
 	border-radius: 5px;
 	margin: 10px;
-	width: 160px;
-	height: 120px;
+	width: 150px;
+	height: 110px;
 }
 .gallery img:hover{
 	border: 5px solid black;
