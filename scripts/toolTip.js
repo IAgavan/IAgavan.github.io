@@ -14,7 +14,6 @@ document.addEventListener('mousemove', moveTip);
       const availableWidth = document.documentElement.offsetWidth;
       const availableHeight = document.documentElement.offsetHeight;
       
-      console.log (availableHeight);
       const minLeft = offset;
       const maxLeft = availableWidth - offset*2 - width;
       const minTop = offset;

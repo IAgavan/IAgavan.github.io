@@ -88,7 +88,7 @@ header .box {
 	display: none;
 	margin-left:15px;
 }
-.menu_drop:focus-within .submenu {
+.menu_drop:hover .submenu {
 	display: block;
 }
 
@@ -127,18 +127,17 @@ header .box {
 	border-radius: 5px;
 	background-color: #E0FFFF;
 }
-
 .gallery img {
-	padding: -1px;
-	border: 5px solid #6D9C00;
-	border-radius: 5px;
+	vertical-align: middle;
+
+	box-sizing: border-box;
 	margin: 10px;
-	width: 150px;
-	height: 110px;
+	width: 160px;
+	height: 120px;
 }
 .gallery img:hover{
-	border: 5px solid black;
-	border-radius: 5px;
+	border: 2px solid transparent;
+	
 }
 
 .container_content .container {
