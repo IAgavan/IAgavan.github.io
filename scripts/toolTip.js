@@ -1,26 +1,30 @@
-document.onmousemove = moveTip;
+
+document.addEventListener('mousemove', moveTip);
+
+// moveTip
     function moveTip(e) {
       const floatTip = document.getElementById("floatTip");
       const floatTipStyle = floatTip.style;
       const width = floatTip.offsetWidth; // Ширина подсказки
       const height = floatTip.offsetHeight; // Высота 
       const offset = 10;
-      const toolTipLeft = e.pageX; // Координата X курсора
-      const toolTipTop = e.pageY; // Координата Y курсора
+      const toolTipLeft = e.pageX + offset; // Координата X курсора
+      const toolTipTop = e.pageY + offset; // Координата Y курсора
       
       const availableWidth = document.documentElement.offsetWidth;
-      const availableHeidht = document.documentElement.offsetHeight;
+      const availableHeight = document.documentElement.offsetHeight;
       
+      console.log (availableHeight);
       const minLeft = offset;
       const maxLeft = availableWidth - offset*2 - width;
       const minTop = offset;
-      const maxTop = availableHeidht - offset*2 - height;
+      const maxTop = availableHeight - offset*2 - height;
 
       let left = Math.max(minLeft, Math.min(maxLeft, toolTipLeft));
       let top = Math.max(minTop, Math.min(maxTop, toolTipTop));
 
       return (floatTipStyle.left = `${left}px`,
-      floatTipStyle.top = `${top}px`)
+              floatTipStyle.top = `${top}px`)
       
     };
 function toolTip(msg) {
@@ -35,3 +39,4 @@ function toolTip(msg) {
   floatTipStyle.display = "none";
   };
 };
+

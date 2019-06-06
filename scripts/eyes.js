@@ -1,5 +1,5 @@
-document.onmousemove = moveEyes;
-	function moveEyes(e) {
+document.addEventListener('mousemove', moveEyes);
+ function moveEyes(e) {
 		//координаты глаз
 		const eyes = document.querySelector('.eyes');
 		const eyesRect = eyes.getBoundingClientRect();
@@ -17,9 +17,10 @@ document.onmousemove = moveEyes;
      	document.querySelector('.eye1').style.transform = 'rotate('+ rotationAngle(eyeX,eyeY) + 'deg)';
      	document.querySelector('.eye2').style.transform = 'rotate('+ rotationAngle(eyeX2,eyeY) + 'deg)';
 	};
-	function rotationAngle(x,y) {
+const rotationAngle = (x,y) => {
 		if (x>=0) {
 			return Math.atan(y/x)*180/Math.PI
 		} 
 		return Math.atan(y/x)*180/Math.PI - 180;
 	};
+
