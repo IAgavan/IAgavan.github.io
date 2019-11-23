@@ -75,12 +75,10 @@
 }
 
 .slick-slide
-{   
-    margin-left: 10px;
-    outline: none;
+{
     display: none;
     float: left;
-    padding-left:25px;
+
     height: 100%;
     min-height: 1px;
 }

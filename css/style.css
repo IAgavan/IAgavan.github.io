@@ -1,16 +1,20 @@
 *{
+	color: rgb(90, 124, 197);
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	border-radius: 5px;
+	font-family: 'Chewy', cursive;
 }
 
 body {
 	background:url(../img/background.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	font: 14px/22px Arial, sans-serif;
-	min-width: 654px; 
+	background-repeat: repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	
+	font-size: 14px/22px;
+	
 	max-width: 1170px;
 	margin:auto;
 }
@@ -27,40 +31,44 @@ header .box {
 	
 	margin: 10px;
 	height: 100px;
-	background-color: rgba(206, 247, 111, 0.6);
+	background-color: rgba(191, 192, 173, 0.6);
 	
 }
 .box.logo {
 	display: flex;
-	width: 170px;
+	min-width: 170px;
 }
 .logo>img{
 	margin: auto;
 }
-.logo2{
-	font-size: 10px;
-}
+
 .company_name{
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Chewy', cursive;
 	font-style: italic;
+	text-align: center;
 	letter-spacing: 5px;
 	display: flex;
 	flex-grow: 6;
 }
 .company_name h1{
 	margin: auto;
+	flex-grow: 7;
 }
 .box.contacts{
-	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-width: 200px;
 	height: 100px;
-	padding: 30px 10px 0px 10px;
-	text-align: right;
+	text-align:center ;
 	flex-grow: 3;
 }
 .box.contacts a{
-	text-decoration: underline;
-	color: black;
+	
+	color:  rgb(90, 124, 197);
 }
+
+
 .container_content_left {
 	
 	display: flex;
@@ -71,44 +79,47 @@ header .box {
 .container_content_left .box {
 	padding: 10px;
 	margin: 10px;
-	width: 170px;
-	background-color:rgba(206, 247, 111, 0.6);
+	height: 100%;
+	min-width: 170px;
+	background-color:rgba(191, 192, 173, 0.6);
 }
-.services {
-	flex-grow: 1;
-	
-}
+
  li{
 	list-style-type: none;
 }
 .menu a,
 .prices li {
+	/* height: 42px; */
 	display: block;
 	border: 1px solid grey;
 	margin-bottom: 2px;
 	text-decoration: none;
-	color: black;
+	color:  rgb(90, 124, 197);;
 	font-size: 0.9em;
 	padding-left: 5px;
 	transition: 0.5s all;
+	
 }
 .menu a:hover,
 .prices li:hover {
+	
 	background-color: grey;
-	padding: 0 0 0 10px;
+	
 }
-
+.text{
+	color: #dd355f;
+}
 .container_content{
-	flex-grow: 1;
+	
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 .container_content .box {
 	padding: 10px;
 	margin: 10px;
-	background-color:rgba(206, 247, 111, 0.6);
+	background-color:rgba(191, 192, 173, 0.6);
 	text-align: justify;
 }
 .box>h2{
@@ -116,23 +127,16 @@ header .box {
 
 }
 .gallery {
-	width: 940px;
-	min-width: 405px;
-	/* display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center; */
-	margin: 10px;
 	
-	max-height:200px;
-	
+	background-color: rgba(191, 192, 173, 0.6);
+	margin: 20px;
 }
 .gallery img {
 	vertical-align: middle;
 	box-sizing: border-box;
-	margin: 10px;
-	width: 240px;
-	height: 160px;
+	margin: auto;
+	width: 160px;
+	height: 120px;
 }
 .gallery img:hover{
 	border: 2px solid transparent;
@@ -143,20 +147,27 @@ header .box {
 	margin: 0;
 }
 footer .container{
+	display: flex;
+	justify-content:space-between;
 	height: 120px;
 }
-footer .box {
-	font-size: 0.8em;
+
+.container_right>.box{
+	height: 50%;
 	margin: 10px;
-	padding: 10px;
-	background-color: rgba(206, 247, 111, 0.6);
+	font-size: 0.8em;
+	background-color: rgba(191, 192, 173, 0.6);
 }
 .items {
+	padding: 10px;
+	margin: 10px;
 	flex-grow: 1;
  	display: flex;
  	flex-direction: column;
  	flex-wrap: wrap;
- 	min-width: 135px;
+	 min-width: 135px;
+	 background-color: rgba(191, 192, 173, 0.6);
+	
 }
 .service_prices {
 	min-width: 170px;
@@ -174,19 +185,25 @@ footer .box {
 	justify-content: space-between;
 	width: 200px;
 }
-.container_right .box{
-	height: 20px;
+.logo2{
+	padding-top: 5px;
+	text-align: center;
+	
 }
+.vk_profile{
+	text-align: center;
+	}
 
 
 #floatTip{
+	padding: 3px;
 	position: absolute;
 	width: 75px;
 	height: 40px;
 	display: none;
-	border: 2px solid black;
+	border: 1px solid black;
 	border-radius: 5px;
-	background: rgba(206, 247, 111, 0.6);
+	background: rgbargba(191, 192, 173, 0.6);
 
 }
 
@@ -218,3 +235,9 @@ footer .box {
 	left:10px;
 }
 
+@media (max-width: 705px) {
+	header>.container,
+	main>.container{
+		flex-direction: column;
+	}
+}
