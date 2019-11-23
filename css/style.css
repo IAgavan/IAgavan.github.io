@@ -127,7 +127,7 @@ header .box {
 
 }
 .gallery {
-	
+	padding: 10px;
 	background-color: rgba(191, 192, 173, 0.6);
 	margin: 20px;
 }
@@ -191,6 +191,7 @@ footer .container{
 	
 }
 .vk_profile{
+	padding-top: 5px;
 	text-align: center;
 	}
 
@@ -237,8 +238,15 @@ footer .container{
 
 @media (max-width: 705px) {
 	header>.container,
-	main>.container,
-	footer>.container{
+	main>.container
+	{
 		flex-direction: column;
+	}
+	.items {
+		display: none;
+	}
+	.container_right {
+		flex-direction: column-reverse;
+		width: 100%;
 	}
 }
