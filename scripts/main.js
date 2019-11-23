@@ -2,6 +2,8 @@ $(document).ready(function () {
   $('.gallery').slick({
     dots: true,
   infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
