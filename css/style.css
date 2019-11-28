@@ -1,3 +1,12 @@
+@keyframes animatedBackground {
+	0 {
+			background-position: 0 0
+	}
+	100% {
+			background-position: -600px 600px
+	}
+}
+
 *{
 	color:#4b1d1d;
 	box-sizing: border-box;
@@ -11,7 +20,7 @@ body {
 	background:url(../img/background.jpg);
 	background-repeat: repeat;
 	background-size: contain;
-	background-attachment: fixed;
+	animation: animatedBackground 60s linear infinite;
 	
 	font-size: 14px/22px;
 	min-width: 290px;
