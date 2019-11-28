@@ -26,19 +26,19 @@
 }
 
 .icon-envelope-o:before {
-  color:  #dd355f;
+  color:  #4b1d1d;
   content: "\f003";
   padding-right: 5px;
   text-decoration: none;
 }
 .icon-phone:before {
-  color:  #dd355f;
+  color:  #4b1d1d;
   content: "\f095";
   padding-right: 5px;
   text-decoration: none;
 }
 .icon-globe:before {
-  color:  #dd355f;
+  color:  #4b1d1d;
   content: "\f0ac";
   padding-right: 5px;
   text-decoration: none;
