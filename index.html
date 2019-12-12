@@ -1,282 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Торты и тортики</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cakes BOOTSTRAP</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/cake.css">
+  <link rel="stylesheet" href="css/swipebox.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/cake.css">
-	<link rel="stylesheet" href="css/swipebox.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-	<header id="up">
-		<div class="container">
-			<div class="box logo">
-				<div class="wrap">
-					<div class="cake">
-						<div class="velas">
-							<div class="fuego"></div>
-							<div class="fuego"></div>
-							<div class="fuego"></div>
-							<div class="fuego"></div>
-							<div class="fuego"></div>
-						</div>
-						<div class="cobertura"></div>
-						<div class="bizcocho"></div>
-					</div>
-				</div>
-			</div>
-			<div class="box company_name">
-				<h1><span class="text">H</span>ome<span class="text">C</span>akes!</h1>
-			</div>
-			<div class="box contacts">
-				<div class="icon-phone"><a href="tel:+77777777777"> +7 (777) 777-77-77</a></div>
+  <div class="container">
+    <div id="up"class="row header">
+      <div class="col-lg-4 col-md-12 col-sm-12 logo">
 
-				<button id="btn" class="order">
-					Хочу торт!
-				</button>
-			</div>
-		</div>
+        <div class="wrap">
+          <a href="#up" class="cake">
+            <div class="velas">
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+              <div class="fuego"></div>
+            </div>
+            <div class="cobertura"></div>
+            <div class="bizcocho"></div>
+          </a>
+        </div>
 
-		<nav class="main_nav">
-			<ul>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="company_name d-flex justify-content-center align-items-center">
+          <a href="#up"><h1><span class="text">H</span>ome<span class="text">C</span>akes!</h1></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+        <div class="contacts align-items-center">
+          <div class="icon-phone"><a href="tel:+77777777777"> +7 (777) 777-77-77</a></div>
 
-				<li><a href="#about">О нас</a></li>
-				<li><a href="#gallery">Галерея</a></li>
-				<li><a href="#contacts">Контакты</a></li>
-			</ul>
-		</nav>
-		<hr>
-	</header>
-	<main>
-		<div class="container">
+          <button class="myBtn order">
+            Хочу торт!
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row section_nav">
+      <div class="main_nav col-lg-8 col-md-12">
+        <ul class="nav d-flex justify-content-between align-items-center">
 
-			<div class="container_content">
-				<h2>Тортики</h2>
-				<a href="#gallery">
-					<div class="slider_top">
-						<img class="slide_top displayed" src="gallery_img/Big/1.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/2.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/3.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/4.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/6.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/7.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/8.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/9.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/10.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/11.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/13.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/15.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/16.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/17.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/18.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/19.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/20.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/21.jpg" alt="">
-						<img class="slide_top" src="gallery_img/Big/22.jpg" alt="">
+          <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
 
-					</div>
-				</a>
+    <hr>
+    
+      <div class="row container_content">
+        <h2 class="col-12">Тортики</h2>
+        <a class="col-lg-5 col-md-12" href="#gallery">
+          <div class="slider_top">
+            <img class="slide_top displayed" src="gallery_img/Big/1.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/2.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/3.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/4.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/6.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/7.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/8.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/9.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/10.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/11.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/13.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/15.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/16.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/17.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/18.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/19.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/20.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/21.jpg" alt="">
+            <img class="slide_top" src="gallery_img/Big/22.jpg" alt="">
 
-				<div class="box main_text">
+          </div>
+        </a>
+        <div class="main_text col-lg-7 col-md-12">
 
-					<p class="text">Здесь должен быть красивый рассказ о пользе поедания тортиков. Да! Красивый рассказ о пользе
-						поедания тортиков...</p>
-					<br>
-					<p> Представьте, что это он:
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ullam cupiditate cumque sapiente magnam
-						rerum? Esse vitae inventore fugiat! Iusto, dolore. Atque quos rem aut labore quisquam dolores ea est
-						incidunt dignissimos quam. Quae eaque saepe debitis fugiat reiciendis autem vitae. Quo numquam, natus nemo
-						labore ea corporis harum voluptate illo ipsum, et quaerat at quod sapiente facere odio itaque magnam nam
-						ipsa sint quis maxime minus, incidunt minima provident? Harum tempora architecto nostrum veritatis omnis
-						minus placeat a unde nemo impedit labore aliquam necessitatibus, dolor porro quis quidem vitae nulla! Id,
-						labore deserunt. Placeat, nisi? Iusto reiciendis, eum odit dolorum molestiae perspiciatis nesciunt
-						doloribus! Voluptatem molestias culpa laborum molestiae quidem, commodi rem voluptate? Iste consectetur
-						sapiente minus ullam perferendis nam blanditiis repellat, esse suscipit, sit a, dolores reprehenderit veniam
-						velit debitis modi molestiae inventore! Vel, quod velit odio quos dicta facere excepturi accusantium fugiat
-						vitae facilis doloremque expedita, quia illo ex, harum omnis. Tempore ipsa minus deserunt ad consectetur
-						earum eos commodi vitae beatae omnis suscipit accusantium, nostrum, voluptatibus porro cumque ex repellat
-						accusamus, deleniti magnam? Voluptatum sint error tenetur porro ab ullam quod repellat earum animi quidem,
-						tempore, possimus natus ea molestiae neque suscipit sapiente. Officia minima eius quo delectus ad impedit,
-						oloremque quaerat nisi non libero esse quo dolor magnam ex distinctio tempore! Veritatis.
-					</p>
+          <p class="text-justify">Здесь должен быть красивый рассказ о пользе поедания тортиков. Да! Красивый рассказ о
+            пользе
+            поедания тортиков...</p>
+                   <p class="text-justify"> Представьте, что это он:
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ullam cupiditate cumque sapiente magnam
+            rerum? Esse vitae inventore fugiat! Iusto, dolore. Atque quos rem aut labore quisquam dolores ea est
+            incidunt dignissimos quam. Quae eaque saepe debitis fugiat reiciendis autem vitae. Quo numquam, natus nemo
+            labore ea voluptate illo ipsum, et quaerat at quod sapiente facere odio itaque magnam namabore aliquam necessitatibus, dolor porro
+          </p>
 
-				</div>
+        </div>
 
-			</div>
-		</div>
-		<hr>
-		<div id="about" class="container">
-			<div class="section_about">
+      </div>
+    
+    <hr>
+    <div id="about">
+      <div class="section_about">
 
-				<div class="container_content">
+        <div class="container_content">
 
-					<div class="main_text about">
-						<h2> О нас</h2>
+          <div class="main_text about">
+            <h2> О нас</h2>
 
-						<p class="text">Домашняя кухня Лучшего Пекаря порадует Вас качеством, вкусом, запахом, цветом и ценой.
-						</p>
-						<p class="text">Изготовление любых вкусняшек по вашему заказу. Быстро, вкусно, недорого! Только
-							лучшие ингридиенты!</p>
+            <p class="text-center">Домашняя кухня Лучшего Пекаря порадует Вас качеством, вкусом, запахом, цветом и
+              ценой.
+            </p>
+            <p class="text-center">Изготовление любых вкусняшек по вашему заказу. Быстро, вкусно, недорого! Только
+              лучшие ингридиенты!</p>
 
-						<p class="text">Больше нам пока нечего рассказать, поэтому вот вам еще немного бессмысленной латыни:
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, distinctio facilis! Nihil, ut, repellat
-							sunt impedit quod id necessitatibus, porro quis nisi eligendi asperiores et fuga praesentium vero. Sequi
-							labore dicta, delectus minima tempora reiciendis dignissimos. Iusto qui aliquid numquam? Quaerat aut
-							inventore ad veniam necessitatibus minus totam quis. Ipsam autem soluta, nam, enim delectus architecto
-							modi sint iusto pariatur, corporis eos nisi porro dolorem necessitatibus adipisci ad doloribus! Amet
-							consectetur consequatur laborum nam blanditiis eveniet quasi, ipsa ducimus hic saepe, ratione omnis quas.
-							Aperiam, culpa odio? Temporibus est, sit, velit quas modi cum facilis iusto facere natus dolores
-							necessitatibus!
-						</p>
-						<br>
-						<div class="order">
-							<b>Но вы всегда можете попробовать что-нибудь заказать, нажав любую кнопочку снизу
-							</b>
+            <p class="text-justify">Больше нам пока нечего рассказать, поэтому вот вам еще немного бессмысленной латыни:
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, distinctio facilis! Nihil, ut, repellat
+              sunt impedit quod id necessitatibus, porro quis nisi eligendi asperiores et fuga praesentium vero. Sequi
+              labore dicta, delectus minima tempora reiciendis dignissimos. Iusto qui aliquid numquam? Quaerat aut
+              inventore ad veniam necessitatibus minus totam quis. Ipsam autem soluta, nam, enim delectus architecto
+              modi sint iusto pariatur, corporis eos nisi porro dolorem necessitatibus adipisci ad doloribus! Amet
+              consectetur consequatur laborum nam blanditiis eveniet quasi, ipsa ducimus hic saepe, ratione omnis quas.
+              Aperiam, culpa odio? Temporibus est, sit, velit quas modi cum facilis iusto facere natus dolores!
+            </p>
+            <br>
+            <div class="order text-center">
+              <b>Но вы всегда можете попробовать что-нибудь заказать, нажав любую кнопочку снизу
+              </b>
 
-						</div>
-						<div class="buttons">
-							<button id="btn" class="order small">
-								Хочу торт!
-							</button>
-							<button id="btn" class="order medium">
-								Хочу торт!
-							</button>
-							<button id="btn" class="order large">
-								Очень хочу торт!
-							</button>
-						</div>
-					</div>
+            </div>
+            <div class="buttons">
+              <button class="myBtn order small">
+                Хочу торт!
+              </button>
+              <button class=" myBtn order medium">
+                Хочу торт!
+              </button>
+              <button class="myBtn order large">
+                Очень хочу торт!
+              </button>
+            </div>
+          </div>
 
-				</div>
-			</div>
-
-
-		</div>
-		<hr>
-		<div id="gallery" class="container">
-			<div class="section_gallery">
-				<h2>Галлерея</h2>
-				<div class="gallery">
-					<a class="swipebox" title="Тортик_1" href="gallery_img/Big/1.jpg"><img src="gallery_img/small/1.jpg"
-							alt=""></a>
-					<!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/2.jpg"><img
+        </div>
+      </div>
+      <hr>
+      <div id="gallery">
+        <div class="section_gallery">
+          <h2>Галерея</h2>
+          <div class="gallery">
+            <a class="swipebox" title="Тортик_1" href="gallery_img/Big/1.jpg"><img src="gallery_img/small/1.jpg"
+                alt=""></a>
+            <!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/2.jpg"><img
 										src="gallery_img/small/2.jpg" alt=""></a> -->
-					<a class="swipebox" title="Тортик_2" href="gallery_img/Big/3.jpg"><img src="gallery_img/small/3.jpg"
-							alt=""></a>
-					<a class="swipebox" title="Тортик_3" href="gallery_img/Big/4.jpg"><img src="gallery_img/small/4.jpg"
-							alt=""></a>
-					<!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/5.jpg"><img
+            <a class="swipebox" title="Тортик_2" href="gallery_img/Big/3.jpg"><img src="gallery_img/small/3.jpg"
+                alt=""></a>
+            <a class="swipebox" title="Тортик_3" href="gallery_img/Big/4.jpg"><img src="gallery_img/small/4.jpg"
+                alt=""></a>
+            <!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/5.jpg"><img
 										src="gallery_img/small/5.jpg" alt=""></a> -->
-					<a class=" swipebox" title="Тортик_4" href="gallery_img/Big/6.jpg"><img src="gallery_img/small/6.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_5" href="gallery_img/Big/7.jpg"><img src="gallery_img/small/7.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_6" href="gallery_img/Big/8.jpg"><img src="gallery_img/small/8.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_7" href="gallery_img/Big/9.jpg"><img src="gallery_img/small/9.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_8" href="gallery_img/Big/10.jpg"><img src="gallery_img/small/10.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_9" href="gallery_img/Big/11.jpg"><img src="gallery_img/small/11.jpg"
-							alt=""></a>
-					<!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/12.jpg"><img
+            <a class=" swipebox" title="Тортик_4" href="gallery_img/Big/6.jpg"><img src="gallery_img/small/6.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_5" href="gallery_img/Big/7.jpg"><img src="gallery_img/small/7.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_6" href="gallery_img/Big/8.jpg"><img src="gallery_img/small/8.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_7" href="gallery_img/Big/9.jpg"><img src="gallery_img/small/9.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_8" href="gallery_img/Big/10.jpg"><img src="gallery_img/small/10.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_9" href="gallery_img/Big/11.jpg"><img src="gallery_img/small/11.jpg"
+                alt=""></a>
+            <!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/12.jpg"><img
 										src="gallery_img/small/12.jpg" alt=""></a> -->
-					<a class=" swipebox" title="Тортик_10" href="gallery_img/Big/13.jpg"><img src="gallery_img/small/13.jpg"
-							alt=""></a>
-					<!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/14.jpg"><img
+            <a class=" swipebox" title="Тортик_10" href="gallery_img/Big/13.jpg"><img src="gallery_img/small/13.jpg"
+                alt=""></a>
+            <!-- <a class=" swipebox" title="Тортик"   href="gallery_img/Big/14.jpg"><img
 										src="gallery_img/small/14.jpg" alt=""></a> -->
-					<a class=" swipebox" title="Тортик_11" href="gallery_img/Big/15.jpg"><img src="gallery_img/small/15.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_12" href="gallery_img/Big/16.jpg"><img src="gallery_img/small/16.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_13" href="gallery_img/Big/17.jpg"><img src="gallery_img/small/17.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_14" href="gallery_img/Big/18.jpg"><img src="gallery_img/small/18.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_15" href="gallery_img/Big/19.jpg"><img src="gallery_img/small/19.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_16" href="gallery_img/Big/20.jpg"><img src="gallery_img/small/20.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_17" href="gallery_img/Big/21.jpg"><img src="gallery_img/small/21.jpg"
-							alt=""></a>
-					<a class=" swipebox" title="Тортик_18" href="gallery_img/Big/22.jpg"><img src="gallery_img/small/22.jpg"
-							alt=""></a>
+            <a class=" swipebox" title="Тортик_11" href="gallery_img/Big/15.jpg"><img src="gallery_img/small/15.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_12" href="gallery_img/Big/16.jpg"><img src="gallery_img/small/16.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_13" href="gallery_img/Big/17.jpg"><img src="gallery_img/small/17.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_14" href="gallery_img/Big/18.jpg"><img src="gallery_img/small/18.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_15" href="gallery_img/Big/19.jpg"><img src="gallery_img/small/19.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_16" href="gallery_img/Big/20.jpg"><img src="gallery_img/small/20.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_17" href="gallery_img/Big/21.jpg"><img src="gallery_img/small/21.jpg"
+                alt=""></a>
+            <a class=" swipebox" title="Тортик_18" href="gallery_img/Big/22.jpg"><img src="gallery_img/small/22.jpg"
+                alt=""></a>
 
 
-				</div>
+          </div>
 
-			</div>
-		</div>
-		<hr>
-		<div id="contacts" class="container">
-			<div class="section_contacts">
-				<h2>Контакты</h2>
-				<div class="box vk_profile">
-					<h3>Мы в социальных сетях</h3>
-					<a href="https://vk.com"><img src="img/iconVK.png" width="
-								30px">пока только ВКонтакте</a>
-				</div>
-				<div class="email">
-					<h3>Напишите нам</h3>
-					<div class="icon-envelope-o"><a href="mailto:contact@email.com"> contact@email.com</a></div>
-				</div>
-				<div class="phone">
-					<h3>Позвоните нам</h3>
-					<div class="icon-phone"><a href="tel:+77777777777"> +7 (777) 777-77-77</a></div>
-				</div>
-				<div class="order">
-					<h3>Или оставьте свой номер и мы Вам перезвоним</h3>
-					<button id="btn" class="order small">
-						Хочу звонок!
-					</button>
-				</div>
+        </div>
+      </div>
+      <hr>
+      <div id="contacts">
+        <div class="section_contacts">
+          <h2>Контакты</h2>
+          <div class="box vk_profile">
+            <b>Мы в социальных сетях</b>
+            <div>
+              <a href="https://vk.com"><img src="img/iconVK.png" width="
+  								30px">пока только ВКонтакте</a>
+            </div>
+          </div>
+          <div class="email">
+            <b>Напишите нам</b>
+            <div class="icon-envelope-o"><a href="mailto:contact@email.com"> contact@email.com</a></div>
+          </div>
+          <div class="phone">
+            <b>Позвоните нам</b>
+            <div class="icon-phone"><a href="tel:+77777777777"> +7 (777) 777-77-77</a></div>
+          </div>
+          <div class="order">
+            <div><b>Или оставьте свой номер и мы Вам перезвоним</b></div>
+            <button class="myBtn order medium">
+              Хочу звонок!
+            </button>
+          </div>
 
 
-			</div>
-		</div>
-	</main>
-	<footer>
-		<hr>
-		<p>&copy 2019</p>
-	</footer>
-	<!-- UP button -->
-	<div id="go_up" hidden>
-		<a href="#up">
-			&#8657; Наверх
-		</a>
-	</div>
+        </div>
+      </div>
 
-	<!-- form -->
 
-	<div id="modal" class="modal">
-		<div class="form">
-				<form>
-				<p><span class="close"> &times; </span></p>
-				<input type="text" placeholder="Ваше Имя">
-				<input type="tel" placeholder="+79999999999">
-				<button type="submit">Позвони мне,позвони!</button>
-			</form>
-		</div>
-	</div>
+      <footer>
+        <hr>
+        <p>&copy 2019</p>
+      </footer>
 
-	<script>
-		window.addEventListener('scroll', function () {
-			go_up.hidden = (pageYOffset < document.documentElement.clientHeight);
-		});
+    </div>
+  </div>
 
-		
-	</script>
+  <!-- UP button -->
+  <div id="go_up" hidden>
+    <a href="#up">
+      &#8657; Наверх
+    </a>
+  </div>
 
-	<script src="scripts/jquery-2.1.0.min.js"></script>
-	<script src="scripts/jquery.swipebox.min.js"></script>
-	<script src="scripts/main.js"></script>
+  <!-- form -->
+
+  <div id="modal" class="modal">
+    <div class="form">
+      <form>
+        <p><span class="close"> &times; </span></p>
+        <input type="text" placeholder="Ваше Имя">
+        <input id="phone" type="tel" placeholder="8(___) ___-____">
+        <button class='myBtn' type="submit">Позвони мне,позвони!</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="scripts/jquery-2.1.0.min.js"></script>
+  <script src="scripts/jquery.swipebox.min.js"></script>
+  <script src="scripts/jquery.maskedinput.js"></script>
+  
+  <script src="scripts/main.js"></script>
+
+
+  <script>
+    //Код jQuery, установливающий маску для ввода телефона элементу input
+    //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+    $(function(){
+      //2. Получить элемент, к которому необходимо добавить маску
+      $("#phone").mask("8(999) 999-9999");
+    });
+    </script>
 
 </body>
 
