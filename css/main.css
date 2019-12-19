@@ -1,365 +1,510 @@
-* {
-  color: #74341d;
-  border-radius: 5px !important;
-  font-family: 'Chewy', cursive;
-}
-
 body {
-  background: url(../img/background.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  /* animation: animatedBackground 60s linear infinite; */
+  background-color: #eaeaea;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
 
-  font-size: 20px;
+
+.top_logo {
+  padding-top: 250px;
+  padding-bottom: 115px;
+  text-align: center;
+}
+
+.logo img {
+  min-width: 60px;
+  width: 100%;
+}
+
+.nav_menu {
+  justify-content: space-around;
+  box-shadow: 0px 0px 13px 5px #c9c9c9;
+  padding: 0 90px;
+  height: 120px;
+  background-color: #f8f8f8;
+}
+
+.nav {
+  display: none;
 
 }
 
-.container {
-  padding-right: 30px;
-  padding-left: 30px;
+.menu-toggler {
+  background: none;
+  border: none;
 }
 
-.header {
-  padding-top: 20px;
+.menu-toggler:focus {
+  border: none;
+}
 
-  min-height: 80px;
+.nav-item a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
 
+}
+
+.nav-item a:hover {
+  opacity: 0.5;
+}
+
+
+.open {
+  display: flex !important;
+
+}
+
+.recipes {
+  position: relative;
+}
+
+.sub-nav {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  padding: 20px 24px 0 24px;
+  top: 100%;
+  left: -50%;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+}
+
+
+.sub-nav a {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.sub-nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+header form {
+  position: relative;
+  font-size: 14px;
+}
+
+.search-form {
+  width: 160px;
+  padding: 0px 0px 0 40px;
+}
+
+form button {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
+
+section {
+  box-shadow: 0px 0px 13px 5px #c9c9c9;
+}
+
+main {
+  padding-top: 75px;
+}
+
+.mySlider {
+  width: 100%;
+}
+
+.first-item {
+
+  background: url(../img/first-item_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 70px 90px;
 
 }
 
 .logo {
-  height: 100%;
+  max-width: 250px;
 }
 
-.wrap {
-  height: 80px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 30px;
+.description {
+  max-width: 355px;
 }
 
-.company_name {
-  height: 100%;
-  font-style: italic;
-  font-size: 55px;
-  text-align: center;
-  letter-spacing: 5px;
-  margin: auto;
-
-}
-.company_name a:hover{
-  text-decoration: none;
+.description .title {
+  word-spacing: 3px;
+  padding-top: 25px;
+  color: #921026;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
 }
 
-h1{
-  font-weight: bold;
-  font-size: 3.5rem;
-}
-h2{
-  font-weight: bold;
-}
-
-
-.company_name h1 span {
-  color: #f4a641;
-}
-
-.contacts {
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between !important;
-  width: 100%;
-
-  text-align: center;
-}
-
-.contacts a {
-  font-size: 18px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-  text-decoration: none;
-  color: #74341d;
+.promo {
+  max-width: 330px;
+  line-height: 20px;
 }
 
 .myBtn {
-  margin: 0 auto 10px;
-
-
-  height: 40px;
-  background-color: #f4a641;
-  font-size: 20px;
-  border: 1px solid #74341d;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27px;
+  width: 105px;
+  border: 1px solid #c2c2c2;
 }
 
-.header .myBtn {
-  min-width: 230px;
-}
+.myBtn a {
 
-.myBtn:hover {
-  border-width: 2px;
-  cursor: pointer;
-}
-
-.myBtn:focus {
-  outline: none;
-}
-
-
-.main_nav {
-  margin: auto;
-}
-
-.main_nav a {
-  color: #74341d;
-  font-size: 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.main_nav a:hover {
-  text-decoration: underline;
-  color: #f4a641;
-}
-
-
-.container_content a {
   display: block;
-  max-width: 400px;
-  margin: 0 auto;
-  min-height: 300px;
+  padding-top: 5px;
+  color: #000;
+  text-decoration: none;
+  font-size: 10px;
+
+
+}
+
+.carousel-indicators {
+  left: 75%;
+  margin-right: 0;
+}
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 1;
+  margin-left: 5px;
+
+}
+
+.carousel-indicators .active {
+  background-color: #555;
+}
+
+
+.demo_recipes {
+  justify-content: space-evenly;
+  padding-top: 40px;
+  margin-top: 75px;
+  padding-bottom: 33px;
+  background-color: #fff;
+}
+
+.recipe {
+  max-width: 315px;
+  font-size: 18px;
+  line-height: 1.2rem;
+}
+
+.recipe_img {
+  overflow: hidden;
+  max-height: 210px;
+  margin-bottom: 14px;
+}
+
+.recipe_img img {
+  width: 100%;
+}
+
+.recipe_title {
+  margin-bottom: 3px;
+  letter-spacing: -1px;
+}
+
+.icons {
+  word-spacing: 5px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.full_recipe {
+  overflow: hidden;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  height: 440px;
+  background-color: #fff;
+}
+
+.full_recipe-img {
+  margin-left: -35px;
   height: 100%;
+}
+
+.full_recipe-img img {
+
+  height: 100%;
+}
+
+.recipe_description {
+  padding: 20px 40px 20px 5px;
+  height: 100%;
+
+}
+
+.recipe_description .icons {
+  font-size: 18px;
+}
+
+.description_content {
+  letter-spacing: -1px;
+  margin-top: 25px;
+  height: 65%;
+  overflow-y: scroll;
+}
+
+.description_content::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #555;
+  border-radius: 3px;
+}
+
+::-webkit-resizer {
+  background-color: #666;
+}
+
+
+.description_title {
+  word-spacing: 5px;
+  font-family: 'Playfair Display', serif;
+  color: #055555;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.directions {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+footer {
+  padding: 25px 10px 35px 20px;
+  background-color: #2f2f2f;
+  font-size: 10px;
+  color: #636363;
+
+}
+
+footer .nav_menu {
+  padding-top: 35px;
+  padding-right: 50px;
+  background-color: transparent;
+  box-shadow: none;
+  height: 100%;
+
+}
+
+footer .nav-item a {
+  color: #636363;
+  font-size: 11px;
+  padding: 0 10px;
+}
+
+footer .nav {
+  margin: 0 auto;
+}
+
+footer span {
+  font-size: 15px;
+  display: block;
+  margin-left: 10px;
+  color: #636363;
+
+}
+
+.copyright {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.links {
+  width: 100%;
   padding: 0;
 }
 
-h2 {
-  
-  
-  text-align: center;
-  padding-bottom: 20px;
+@media (min-width: 1200px) {
 
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
 }
 
-.slider_top {
+@media (min-width:992px) {
+  .nav_menu {
+    justify-content: space-evenly;
+  }
 
-  margin: 0 auto;
-  position: relative;
+  .menu-toggler {
+    display: none;
+  }
 
-  height: 100%;
-  max-width: 400px;
-  width: 100%;
-  padding: 0px;
-  margin: 0;
-  list-style-type: none;
-  align-items: center;
-
-}
-
-.slide_top {
-  position: absolute;
-  top: 0;
-
-  width: 100%;
-
-  opacity: 0;
-  z-index: 1;
-
-  -webkit-transition: opacity 2s;
-  -moz-transition: opacity 2s;
-  -o-transition: opacity 2s;
-  transition: opacity 2s;
-}
-
-.slide_top img {
-  width: 100%;
-
-}
-
-.displayed {
-  opacity: 1;
-  z-index: 2;
-}
-
-
-
-.buttons {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-button.small {
-  width: 25%;
-  min-width: 120px;
-}
-
-button.medium {
-  width: 37.5%;
-  min-width: 180px;
-}
-
-button.large {
-  width: 50%;
-  min-width: 220px;
-}
-
-.gallery {
-  padding: 10px;
-  background-color: transparent;
-  margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-
-}
-
-.gallery img {
-  margin: 10px;
-  display: inline-block;
-  height: 120px;
-  width: 160px;
-  border: 3px solid #74341d;
-  background-color: #74341d;
-}
-
-.gallery img:hover {
-  background-color: #f4a641;
-  border: 2px solid #f4a641;
-
-}
-
-
-.section_contacts {
-  margin: 0 auto 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.section_contacts .email,
-.section_contacts .phone,
-.section_contacts .order,
-.section_contacts .vk_profile {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.section_contacts a {
-  color: #74341d;
-}
-
-footer {
-  text-align: center;
-}
-
-
-#go_up {
-
-  text-align: center;
-  padding-top: 2px;
-  width: 100px;
-  height: 40px;
-  background-color: #f4a641;
-  font-size: 20px;
-  border: 1px solid #74341d;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  opacity: 0.5;
-}
-
-#go_up a {
-  color: #74341d;
-  text-decoration: none;
-}
-
-#go_up:hover {
-  opacity: 1;
-}
-
-.modal {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-form {
-  background: url(../img/background.jpg);
-  background-size: contain;
-  width: 300px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-
-}
-
-form>p {
-  text-align: right;
-}
-
-.close {
-  text-align: right;
-  padding-right:15px;
-  font-size: 30px;
-  width: 50px;
-}
-
-.close:hover {
-  cursor: pointer;
-}
-
-form>button {
-  width: 90%;
-  margin-top: 50px;
-}
-
-input {
-  width: 90%;
-  padding: 5px;
-  outline: none;
-  margin: 0 auto 10px;
-  height: 40px;
-  font-size: 20px;
-  border: 1px solid #74341d;
-
-}
-
-
-
-@media (max-width: 768px) {
   .nav {
+    display: flex;
+  }
+
+  .recipes:hover .sub-nav {
+    display: block;
+  }
+
+}
+
+@media(max-width:991px) {
+  .nav_menu {
+    padding: 20px;
+    position: relative;
+
+  }
+
+  header .nav {
+    position: absolute;
+    top: 60%;
+    right: 2%;
     flex-direction: column;
+    box-shadow: 0px 0px 13px 5px #c9c9c9;
+    background-color: #f8f8f8;
+    z-index: 1000;
+  }
+
+  footer .nav_menu {
+    padding: 0 20px;
+  }
+
+  footer .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .nav-item {
+    text-align: right;
+    padding-bottom: 10px;
+
+  }
+
+  footer .nav-item a {
+    padding-right: 0;
+  }
+
+  footer .logo {
+    flex-direction: column;
+  }
+
+  footer .links {
+    display: none !important;
+  }
+
+  footer .logo>.links {
+    padding-top: 10px;
+    display: flex !important;
+  }
+
+  .links span {
+    margin: 0 5px;
+  }
+
+  .copyright {
+    width: 100%;
+    border-top: 2px solid #636363;
+    padding-top: 10px;
+    justify-content: flex-end;
+    text-align: right;
+
+  }
+
+}
+
+@media(max-width:450px) {
+  .top_logo {
+    display: none !important;
+  }
+
+  .nav_menu {
+    background-color: #fbfcfd;
+    padding: 2px;
+  }
+
+  .form-inline {
+    width: 50%;
+  }
+
+  .search-form {
+    min-width: 150px;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+
+  .first-item {
+
+    background: #fbfcfd;
+    padding: 0px 0 50px 0;
+  }
+
+  .first-item .logo,
+  .first-item .description {
+    display: none;
+
+  }
+
+  .mob_img {
+    display: flex !important;
     justify-content: center;
   }
-}
-@media(max-width:385px){
- 
-  .container_content a {
-    min-height: 260px;
-  } 
-  
-  h1{
-    font-size: 2.5rem;
+
+  .carousel-item {
+    position: relative;
   }
-}
-@media(max-width:300px){
-  .container_content a {
-    min-height: 200px;
-  } 
-  h1{
-    font-size: 2rem;
+
+  .first-item .myBtn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    width: 100%;
   }
-  button.myBtn {width: 100%;}
+
+
+  .first-item .myBtn a {
+    font-size: 18px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+
+  .demo_recipes{
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .recipe p {
+    padding-left: 15px;
+  }
 }
