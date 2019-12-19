@@ -306,10 +306,30 @@ main {
 .error{
   background: url(../img/sorry.png);
   background-repeat: no-repeat;
-  background-size: cover;
- 
-  
+  background-size: cover;  
 }
+ .sorry{
+   font-size: 34px;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 0;
+ }
+ .nopage{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 16px;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   color: #a9a9a9;
+  margin-bottom: 0;
+ }
+ .smile{
+  color: #a9a9a9;
+  transform: rotate(60deg);
+  text-align: center;
+  font-size: 33px;
+  font-family: 'Playfair Display', serif;
+ }
 
 
 
