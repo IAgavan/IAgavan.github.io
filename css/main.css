@@ -221,7 +221,8 @@ main {
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
 }
-.icons img{
+
+.icons img {
   padding-bottom: 7px;
 }
 
@@ -297,6 +298,81 @@ main {
   font-weight: bold;
 }
 
+.authors {
+  margin-bottom: 100px;
+  box-shadow: none;
+}
+
+.error{
+  background: url(../img/sorry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  
+}
+
+
+
+
+
+.author {
+  padding: 20px 45px 30px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0px 0px 13px 5px #c9c9c9;
+  background-color: #f8f8f8;
+}
+
+.div_header {
+
+  font-size: 20px;
+  font-style: italic;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 2px 0;
+}
+
+.div_content {
+  padding-top: 24px;
+  height: 100%;
+}
+
+.author_photo img {
+  border-radius: 50%;
+
+}
+
+.author_name {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.name {
+  margin-bottom: 2px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.country {
+  margin-bottom: 2px;
+  letter-spacing: -1px;
+}
+
+.arcticle {
+  padding-top: 23px;
+  max-width: 290px;
+}
+
+.article_name {
+  font-size: 20px;
+}
+
+.article_text{
+  font-size: 12px;
+  font-style: italic;
+}
+.signature{
+  text-align: right;
+}
 
 
 
@@ -344,6 +420,11 @@ footer span {
   width: 100%;
   padding: 0;
 }
+
+.links span {
+  color: #636363;
+}
+
 
 @media (min-width: 1200px) {
 
@@ -426,6 +507,7 @@ footer span {
   }
 
   .links span {
+
     margin: 0 5px;
   }
 
@@ -504,10 +586,11 @@ footer span {
   }
 
 
-  .demo_recipes{
+  .demo_recipes {
     padding-top: 20px;
     margin-top: 0;
   }
+
   .recipe p {
     padding-left: 15px;
   }
