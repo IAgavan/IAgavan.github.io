@@ -85,11 +85,11 @@
   <main class="container">
     <section class="row">
       <div class="mySlider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carousel_1" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carousel_1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel_1" data-slide-to="1"></li>
+            <li data-target="#carousel_1" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -226,11 +226,11 @@
       <div class="author error">
         <div class="div_header">404</div>
         <div class="div_content d-flex justify-content-center align-items-center">
-            <div>
-              <p class="sorry">Sorry</p>
-              <p class="nopage">we coudn't <br>find the page</p>
-              <p class="smile">:(</p>
-            </div>
+          <div>
+            <p class="sorry">Sorry</p>
+            <p class="nopage">we coudn't <br>find the page</p>
+            <p class="smile">:(</p>
+          </div>
         </div>
       </div>
 
@@ -268,6 +268,119 @@
       </div>
     </section>
 
+    <section class="row sidebar d-flex justify-content-around">
+      <div class="sidebar_column left_col">
+        <div class="recipe_blog">
+          <div class="blog_name d-flex justify-content-center">
+            Chi-Chi or Chichi
+          </div>
+          <div class="blog_slider">
+            <div id="carousel_2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel_2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel_2" data-slide-to="1"></li>
+                <li data-target="#carousel_2" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="bloger_info d-flex justify-content-around">
+                    <div class="bloger"><img src="img/bloger.png" alt=""></div>
+                    <div class="bloger_info_content">
+                      <p>Recipe by <br><span class="bold">Smuckersreg Toppings</span></p>
+                      <p class="icons"><span class="icon-clock-o"></span>15mins|<span
+                          class="icon-comment-o"></span>12<span class="icon-eye"></span>13</p>
+                    </div>
+                  </div>
+                  <div class="blog_photo"><img src="img/Blog_photo.png" alt=""></div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="bloger_info d-flex justify-content-around">
+                    <div class="bloger"><img src="img/bloger.png" alt=""></div>
+                    <div class="bloger_info_content">
+                      <p>Recipe by <br><span class="bold">Smuckersreg Toppings</span></p>
+                      <p class="icons"><span class="icon-clock-o"></span>15mins|<span
+                          class="icon-comment-o"></span>12<span class="icon-eye"></span>13</p>
+                    </div>
+                  </div>
+                  <div class="blog_photo"><img src="img/Blog_photo.png" alt=""></div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="bloger_info d-flex justify-content-around">
+                    <div class="bloger"><img src="img/bloger.png" alt=""></div>
+                    <div class="bloger_info_content">
+                      <p>Recipe by <br><span class="bold">Smuckersreg Toppings</span></p>
+                      <p class="icons"><span class="icon-clock-o"></span>15mins|<span
+                          class="icon-comment-o"></span>12<span class="icon-eye"></span>13</p>
+                    </div>
+                  </div>
+                  <div class="blog_photo"><img src="img/Blog_photo.png" alt=""></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_column middle_col">
+        <div class="recipe_filter">
+          <div class="recipe_filter_top d-flex justify-content-between">
+            <div class="recipe_filter_title">
+              Recipe
+            </div>
+            <div class="d-flex links justify-content-end">
+              <!-- print recipe(using JS) -->
+              <a href="#"><span class="icon-print"></span></a>
+              <!--send recipe to email  -->
+              <a href="#"><span class="icon-envelope-o"> </span></a>
+              <a href="http://facebook.com"><span class="icon-facebook"> </span></a>
+              <a href="http://pinterest.com"> <span class="icon-pinterest"> </span></a>
+            </div>
+          </div>
+          <div class="filter_buttons d-flex justify-content-center">
+            <input class="d-none" type="radio" name="filter" id="easy" checked>
+            <label for="easy" class="filter_button">Easy</label>
+            <input class="d-none" type="radio" name="filter" id="middle">
+            <label for="middle" class="filter_button">Middle</label>
+            <input class="d-none" type="radio" name="filter" id="long">
+            <label for="long" class="filter_button">Long</label>
+          </div>
+          <div class="filtered_content">
+            <div class="short_recipe easy">
+              <div class="short_recipe_img"><img src="img/short-recipe_1.png" alt=""></div>
+              <div class="short_recipe_feedback">
+                <p> by <span class="bold">Smuckersreg Toppings</span></p>
+                <p class="feedback">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</p>
+              </div>
+            </div>
+            <div class="short_recipe easy">
+                <div class="short_recipe_img"><img src="img/short-recipe_1.png" alt=""></div>
+                <div class="short_recipe_feedback">
+                  <p> by <span class="bold">Smuckersreg Toppings</span></p>
+                  <p class="feedback">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</p>
+                </div>
+            </div>
+            <div class="short_recipe easy">
+                <div class="short_recipe_img"><img src="img/short-recipe_1.png" alt=""></div>
+                <div class="short_recipe_feedback">
+                  <p> by <span class="bold">Smuckersreg Toppings</span></p>
+                  <p class="feedback">Thanks for the recipe lorem ipsum bla bla bla Thanks for the recipe lore</p>
+                </div>
+            </div>
+            <div class="short_recipe middle"></div>
+            <div class="short_recipe middle"></div>
+            <div class="short_recipe long"></div>
+            <div class="short_recipe long"></div>
+            <div class="short_recipe long"></div>
+          </div>
+          <div class="view_more_btn myBtn">
+            view more
+          </div>
+        </div>
+      </div>
+      <div class="sidebar_column right_col"></div>
+    </section>
   </main>
 
 
