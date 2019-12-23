@@ -149,6 +149,7 @@ main {
 }
 
 .myBtn {
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +160,10 @@ main {
 
 .myBtn a {
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
   padding-top: 5px;
   color: #000;
   text-decoration: none;
@@ -456,6 +460,7 @@ main {
   width: 100%;
   box-shadow: 0px 0px 13px 5px #c9c9c9;
   background-color: #fff;
+  padding-bottom: 18px;
 
 }
 
@@ -491,11 +496,15 @@ input[type="radio"]:checked+label {
 
 
 .short_recipe {
-  display: flex;
-  margin: 0 15px 15px 15px;
+  display: none;
+  margin: 15px 15px 35px 15px;
+
 
 }
 
+.easy {
+  display: flex;
+}
 
 .short_recipe_img {
   max-width: 50px;
@@ -503,25 +512,68 @@ input[type="radio"]:checked+label {
   height: 50px;
   overflow: hidden;
 }
-.short_recipe_img img{
- height: 100%;
+
+.short_recipe_img img {
+  height: 100%;
 }
 
-.short_recipe_feedback{
+.short_recipe_feedback {
   font-size: 12px;
   padding: 0 10px;
 }
-.short_recipe_feedback p{
+
+.short_recipe_feedback p {
   margin: 0;
 }
-.feedback{
+
+.feedback {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
 }
-.view_more_btn{
-  text-transform: uppercase;
+
+.view_more_btn {
+  margin: 0 20px;
+
 }
+
+
+.popular {
+  box-shadow: 0px 0px 13px 5px #c9c9c9;
+  padding: 15px 17px 120px;
+  background: url(../img/Popular.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.popular_title {
+  font-size: 32px;
+  color: #921026;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  margin: 0 15px 15px 5px;
+  padding-bottom: 5px;
+ 
+  border-bottom: 2px solid #fff;
+}
+
+.popular_name{
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.popular_description{
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+.popular .icons{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
 
 
 
@@ -684,6 +736,9 @@ footer span {
 }
 
 @media(max-width:450px) {
+  *{
+    box-shadow: none !important;
+  }
   .top_logo {
     display: none !important;
   }
@@ -756,8 +811,18 @@ footer span {
     padding-left: 15px;
   }
 
+  .sidebar .left_col{
+    display: none;
+  }
+  .sidebar_column{
+    background-color: #fff;
+    max-width: 100%;
+    padding: 25px 0;
+    border-top: 2px solid #dadbdb;
+  }
+
   footer {
-    margin-bottom: 0;
+    margin:  0;
   }
 
 
