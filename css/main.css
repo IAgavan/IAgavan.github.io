@@ -6,8 +6,8 @@ body {
 
 
 .top_logo {
-  padding-top: 250px;
-  padding-bottom: 115px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -565,6 +565,7 @@ input[type="radio"]:checked+label {
 }
 
 .popular_description {
+  font-style: oblique;
   font-size: 16px;
   letter-spacing: -1px;
 }
@@ -577,7 +578,112 @@ input[type="radio"]:checked+label {
 }
 
 
+.forms{
+ 
+  box-shadow: none;
+  margin-top: 100px;
+}
 
+.forms form{
+  height: initial;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.form+.form{
+  margin-left: 90px;
+}
+
+.login_form,
+.signin_form{
+  padding: 10px 30px;
+  max-width: 330px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 13px 5px #c9c9c9;;
+}
+
+.form_title{
+  font-style: oblique;
+  font-size: 20px;
+  margin-bottom:  25px;
+  padding-bottom: 3px;
+  
+  border-bottom: 2px solid #ddd;
+}
+
+.form_name{
+  letter-spacing: -1px;
+}
+
+.forms input[type="text"],
+.forms input[type="password"]{
+  width: 100%;
+  font-style: oblique;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  padding: 5px 20px ;
+  border: 1px solid #939393;
+ 
+}
+.forms input[type="text"]:focus,
+.forms input[type="password"]:focus{
+  box-shadow: inset 1px 1px 5px 1px rgba(99, 99, 99, 0.4);
+  outline: none;
+}
+::placeholder{
+  color: #939393;
+}
+.checkbox{
+  width: 100%;
+  margin-top: 20px;
+  color: #989898;
+}
+
+.forms input[type="submit"]{
+  margin-top: 20px;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+#remember{
+  background-color: transparent;
+}
+.checkbox label{
+  font-size: 12px;
+  width: auto;
+  margin: 0;
+}
+.checkbox a{
+font-style: oblique;
+  font-size: 12px;
+  text-decoration: none;
+  color: #989898;
+}
+.forms .links{
+  font-size: 22px;
+  margin-top: 22px;
+  
+}
+.forms .links a{
+  margin: 0 12px;
+}
+.forms p{
+  text-align: center;
+  color: #989898;
+  font-style: oblique;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.signin_form p {
+  text-align: start;
+}
+
+.signin_form p a{
+  text-decoration: underline;
+}
 
 footer {
   margin-top: 100px;
@@ -697,7 +803,9 @@ footer span {
     display: none;
   }
 
-
+.forms{
+  display: none !important;
+}
 
 
 
